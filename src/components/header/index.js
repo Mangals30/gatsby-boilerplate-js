@@ -1,13 +1,9 @@
 import { Link } from 'gatsby'
-import React, { FC } from 'react'
-import './styles.less'
-interface HeaderProps {
-  /** siteTitle prop type */
-  siteTitle: string
-}
+import React from 'react'
+import styles from './styles.scss'
 
-const Header: FC<HeaderProps> = ({ siteTitle }) => (
-  <header className={'header'}>
+const Header = ({ siteTitle }) => (
+  <header className={styles.header}>
     <div
       style={{
         margin: `0 auto`,
